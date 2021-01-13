@@ -3,8 +3,8 @@
 #define MX_RAIN_H
 
 #include <ncurses.h>
-#include <stdlib.h>
 #include <unistd.h>
+#include <stdlib.h>
 #include <time.h>
 #include <locale.h>
 
