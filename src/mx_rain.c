@@ -35,9 +35,7 @@ void mx_rain(){
 			
 			attron(COLOR_PAIR(temp_color));
 			mvwaddch(stdscr, text_out[i], i, wc);
-			attroff(COLOR_PAIR(temp_color));
 
-			attron(COLOR_PAIR(temp_color));
 			mvwaddch(stdscr, text_out[i] - text_len[i], i, ' ');
 			attroff(COLOR_PAIR(temp_color));
 
@@ -49,7 +47,7 @@ void mx_rain(){
 
 		int speed = 100;
 
-		usleep(1000 * speed);
+		sleep(1);
 		nodelay(stdscr, TRUE);
 		noecho();
 
